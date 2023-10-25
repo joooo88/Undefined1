@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>회사명</title>
+
+  <!--meta-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1"> 
+  <meta http-equiv="X-UA-Compatible" content="le=edge">
+
+  <!--bootstrap-->
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+  <!--css-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/moblie.css">
+
+  <!--favicon--->
+  <link href="img/favicon.ico" rel="icon">
+  <link href="img/favicon.ico" rel="apple-touch-icon">
+
+  <!--js-->
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="js/menu_scroll.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+</head>
+
+
+
+<body>
+
+
+  
+  <header  class="header" >
+
+    <div class="hd_all">
+
+      <hgroup>
+
+        <a href="#home">
+          <h1 class="menu_style">
+            <img src="img/BDT logo row.png" alt="logo">
+          </h1>
+        </a>
+
+      </hgroup>
+
+
+      <nav class="pc_menu">
+        <ul class="menu_style">
+          <li><a href="#home" class="scroll"onClick="selectLink(this); return false;">회사소개</a></li>
+          <li><a href="#about" class="scroll" onClick="selectLink(this); return false;">제공서비스</a></li>
+          <li><a href="#contact" class="scroll" onClick="selectLink(this); return false;">문의하기</a></li>
+        </ul>
+      </nav>
+
+      <div class="lang"><a href="index_eng.html" class="scroll">KOR
+        <!-- KOR | <bb> &nbsp;ENG </bb> -->
+      </a></div>
+
+      
+
+     <!--반응형-->
+
+     <div class="m_menu_button">
+
+      <a href="#" class="menu-trigger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+
+    </div>
+
+     <!--반응형 js-->
+     <script type="text/javascript">
+
+      $(function () {
+        $(".menu-trigger").click(function (e) {
+          e.preventDefault();
+          $(this).toggleClass('active-' + 1);
+        });
+      });
+
+    </script>
+
+    <nav class="m_menu">
+      <ul class="menu_style">
+        <li><a href="#home" class="scroll"onClick="selectLink(this); return false;">회사소개</a></li>
+        <li><a href="#about" class="scroll" onClick="selectLink(this); return false;">제공서비스</a></li>
+        <li><a href="#contact" class="scroll" onClick="selectLink(this); return false;">문의하기</a></li>
+        <li class="lang"><a href="index_eng.html" class="scroll"><div>
+          Eng
+        </div></a></li>
+      </ul>
+      
+    </nav>
+
+    <!--반응형 js-->
+    <script type="text/javascript">
+      $(function () {
+        $(".m_menu_button").click(function () {
+          $(".m_menu").animate({ height: "toggle" }, 250);
+        });
+      });
+
+    </script>
+
+    </div>
+
+  </header>
+
+  <main>
+    <!-- home -->
+    <section id="home">
+      <div class="home-bg">
+      </div>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="img/home1.jpg"></div>
+          <div class="swiper-slide"><img src="img/home2.jpg"></div>
+          <div class="swiper-slide"><img src="img/home3.jpg"></div>
+        </div>
+      </div>
+
+      <article>
+      <div class="home-above">
+        <h1>회사명</h1>
+      </div>
+      <span class="home-span"></span>
+      <div class="home-under" >
+        <div class="home-title" data-aos="fade-right" data-aos-duration="1000" >
+          <h3>
+            블록체인 비즈니스 초기부터 쌓아온 실질적이고<br>
+            효율적인 노하우로 컨설팅해드립니다.<br>
+            여러분의 소중한 프로젝트를 함께<br>
+            완성시킬, 저희 *** 가 동행하겠습니다.
+          </h3>
+        </div>
+      </div>
+
+      </article>
+      
+    </section>
+    <!-- home js -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        speed : 800,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+      });
+    </script>
+
+    <!-- about -->  
+    <section id="about">
+      <article class="frame-1">
+        <ul>
+          <li class="left">
+            <h2 data-aos="fade-right" data-aos-duration="1000" >환영합니다!</h2>
+            <h3 data-aos="fade-right" data-aos-duration="1500" >
+              고객님의 의뢰를 받아 완성도 높은 <br>
+              프로젝트를 위해 전문적이고 상세한 <br> 
+              블록체인 제작을 컨설팅해드립니다.
+            </h3>
+          </li>
+          <li class="right" data-aos="fade-left" data-aos-duration="1000" >
+            <img src="img/about2.jpg">
+          </li>
+        </ul>
+      </article>
+
+      <article class="frame-2">
+        <div class="frame-bg"></div>
+        <div class="grid-box">
+            <div class="item-grid"> 
+              <div class="item item1">
+                <img class="bgimg" src="img/group1.jpg">
+                <div class="text-box" data-aos="fade-right" data-aos-duration="1000">
+                  <h2>회사명의 미션<img class="iconimg" src="img/Group1.svg"></h2>
+                  <h4>우리의 미션은 혁신적인 가상화폐 솔루션을 제공하여 고객들이 안전하고 효율적으로 블록체인 생태계에 참여할 수 있도록 하는 것입니다.</h4>
+                </div>
+              </div>
+
+              <div class="item item2">
+                <img class="bgimg" src="img/group2.jpg">
+                <div class="text-box" data-aos="fade-right" data-aos-duration="1500">
+                  <h2>회사명의 서비스<img class="iconimg" src="img/Group2.svg"></h2>
+                  <h4>블록체인 백서 제작, 홈페이지 구성, 상장, 고객 관리, 교육 등을 포함한 종합적인 컨설팅 서비스를 제공합니다.</h4></div>
+                </div>
+
+              <div class="item item3">
+                <img class="bgimg" src="img/group4.jpg">
+                <div class="text-box" data-aos="fade-right" data-aos-duration="1800">
+                  <h2>전문가 팀<img class="iconimg" src="img/Group3.svg"></h2>
+                  <h4>블록체인 및 가상화폐 분야의 전문가들로 구성된 팀으로, 고객의 다양한 요구에 맞춰 최적의 솔루션을 제공합니다.</h4></div>
+                </div>
+
+              <div class="item item4">
+                <img class="bgimg" src="img/group3.jpg">
+                <div class="text-box" data-aos="fade-right" data-aos-duration="2100">
+                  <h2>고객 만족도<img class="iconimg" src="img/Group4.svg"></h2>
+                  <h4>회사명은 고객들의 만족도를 최우선으로 생각하며 항상 최상의 서비스를 제공하기 위해 노력합니다.</h4></div>
+                </div>
+            </div>
+          
+        </div>
+      </article>
+
+      <article class="frame-3">
+        <div class="title-3">
+          <h2 data-aos="fade-down" data-aos-duration="1000">상장 가능 거래소</h2>
+        </div>
+
+        <ul>
+          <li class="e1" data-aos="fade-up" data-aos-duration="1000">
+            <div><img src="img/Enterprise1.png"></div>
+            <div><img src="img/Enterprise2.png"></div>
+            <div><img src="img/Enterprise3.png"></div>
+          </li>
+          <li class="e2" data-aos="fade-up" data-aos-duration="1500">
+            <div><img src="img/Enterprise4.png"></div>
+            <div><img src="img/Enterprise5.png"></div>
+            <div><img src="img/Enterprise6.png"></div>
+          </li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- contact -->
+    <section id="contact">
+      <div>
+        <img class="contbg" src="img/contact-bg.png">
+        <ul>
+        <li class="cont-left">
+          <h2>문의하기 <img></h2>
+          <h3>
+            더 자세한 정보나 상담이 필요하신가요?<br>
+            언제든지 연락주세요.
+          </h3>
+        </li>
+        <li class="cont-right">
+          <div >
+            <h4>카카오톡 바로가기 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ></h4>
+          </div>
+          <div>
+            <h4>텔레그램 바로가기 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ></h4>
+          </div>
+        </li>
+      </ul>
+      </div>
+      
+    </section>
+  </main>
+  
+  <footer>
+    <div class="footer_area container">
+      <ul class="ulm">
+        <li class="foter-left">
+          <div class="clikbox">
+            <a href="#home">
+                    <h1 class="logo_icon">
+                      <img src="img/BDT logo row.png" alt="logo">
+                    </h1>
+            </a>
+            
+            <div class="sns">
+              <a href="#" class="kakao"><i class="xi-kakaotalk xi-x"></i></a>
+              <a href="#" class="tele"><i class="xi-telegram xi-x"></i></a>
+            </div>
+          </div>
+
+          <div class="inc">
+                  <h4>회사명</h4>
+                  <p>회사주소: </p>
+                  <p>사업자 등록번호: </p>
+                  <p>대표이사: </p>
+                  <!-- <li>운영사 :</li> -->
+          </div>
+        </li>
+        
+      </ul>
+
+      
+
+      
+    </div>
+
+    <p class="footer_p">회사명은 영업에 관여하지 않고 상장과 계약, 기술, 고객관리 등 운영에 관한 솔루션만을 제공합니다.</p>
+  </footer>
+
+  <script>
+    AOS.init();
+  </script>
+<script src="js/header.js"></script>
+
+</body>
+
+
+</html>
