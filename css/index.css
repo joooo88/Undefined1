@@ -303,6 +303,16 @@ main #about .frame-1 ul .right {
 main #about .frame-1 ul .right img {
   width: 600px;
 }
+main #about .aperture {
+  padding-top: 3rem;
+}
+main #about .aperture h3 {
+  font-size: 1.7rem;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+  text-underline-position: under;
+}
 main #about .frame-2 {
   width: 100%;
   padding: 10rem;
@@ -326,7 +336,7 @@ main #about .frame-2 .grid-box .item-grid .item {
   position: relative;
   overflow: hidden;
   color: #fff;
-  padding: 1rem;
+  padding: 1.3rem;
 }
 main #about .frame-2 .grid-box .item-grid .item .bgimg {
   position: absolute;

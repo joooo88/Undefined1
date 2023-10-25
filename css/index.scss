@@ -343,6 +343,16 @@ main{
         }
       }
     }
+    .aperture{
+      padding-top:3rem ;
+      h3{
+        font-size: 1.7rem;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: underline;
+        text-underline-position: under;
+      }
+    }
     .frame-2{
       width: 100%;
       padding: 10rem;
@@ -365,7 +375,7 @@ main{
               position: relative;
               overflow: hidden;
               color: #fff;
-              padding: 1rem;
+              padding: 1.3rem;
               .bgimg{
                 // display: none;
                 position: absolute;
