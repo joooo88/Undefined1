@@ -304,7 +304,7 @@ main #about .frame-1 ul .right img {
   width: 600px;
 }
 main #about .aperture {
-  padding-top: 3rem;
+  padding: 5rem;
 }
 main #about .aperture h3 {
   font-size: 1.7rem;
@@ -316,7 +316,7 @@ main #about .aperture h3 {
 main #about .frame-2 {
   width: 100%;
   padding: 10rem;
-  background-color: #ffffff;
+  background-color: #F3F6FB;
 }
 main #about .frame-2 .grid-box {
   width: 100%;
@@ -388,6 +388,7 @@ main #about .frame-2 .grid-box .item-grid .item4 {
 }
 main #about .frame-3 {
   width: 100%;
+  padding-top: 5rem;
 }
 main #about .frame-3 .title-3 h2 {
   margin-top: 0 auto;
