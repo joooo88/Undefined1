@@ -1,9 +1,196 @@
 @charset "UTF-8";
 /*데탑 1440px*/
+@media screen and (max-width: 1440px) {
+  main #about .frame-2 .grid-box .item-grid .item .text-box h2 {
+    font-size: 1.4rem;
+  }
+  main #about .frame-2 .grid-box .item-grid .item .text-box h2 .iconimg {
+    height: 25px;
+  }
+  main #contact div ul {
+    width: 80%;
+    margin: 0 auto;
+  }
+  main #contact div ul .cont-left h2 {
+    font-size: 2rem;
+  }
+  main #contact div ul .cont-left h3 {
+    font-size: 1.5rem;
+  }
+}
 /*노트북 1024px*/
+@media screen and (max-width: 1024px) {
+  header .hd_all {
+    width: 100%;
+  }
+  main #about .frame-1 ul .right img {
+    width: 400px;
+  }
+  main #about .frame-2 {
+    padding: 5rem 0;
+  }
+  main #about .frame-3 ul {
+    width: 70%;
+    margin: 0 auto;
+  }
+  main #contact div ul {
+    padding: 0 3rem;
+    width: 100%;
+  }
+  main #contact div ul .cont-left h3 {
+    font-size: 1rem;
+  }
+  main #contact div ul .cont-right {
+    padding-left: 5rem;
+  }
+  main #contact div ul .cont-right div {
+    width: 250px;
+  }
+  main #contact div ul .cont-right div h4 {
+    font-size: 1rem;
+  }
+  footer .footer_area {
+    padding: 0 1rem;
+  }
+}
 /*패드 991px*/
+@media screen and (max-width: 991px) {
+  main #contact div ul .cont-right {
+    padding-left: 3rem;
+  }
+}
 /*아이패드 768px*/
+@media screen and (max-width: 768px) {
+  header .hd_all .pc_menu .menu_style {
+    gap: 1rem;
+  }
+  main #about .frame-1 ul .left h2 {
+    font-size: 2.5rem;
+  }
+  main #about .frame-1 ul .left h3 {
+    font-size: 1.1rem;
+  }
+  main #about .frame-1 ul .right {
+    padding-left: 3rem;
+  }
+  main #about .frame-1 ul .right img {
+    width: 300px;
+  }
+  main #about .aperture h3 {
+    font-size: 1.2rem;
+  }
+  main #about .frame-2 .grid-box .item-grid {
+    width: 80%;
+  }
+  main #about .frame-2 .grid-box .item-grid .item {
+    padding: 1rem;
+  }
+  main #about .frame-2 .grid-box .item-grid .item .text-box h2 {
+    font-size: 1.1rem;
+  }
+  main #contact {
+    height: 40vh;
+  }
+  main #contact div ul {
+    padding: 0 2rem;
+    top: 12.5rem;
+  }
+}
 /* 모바일 767px*/
+@media screen and (max-width: 767px) {
+  header .hd_all .pc_menu {
+    display: none;
+  }
+  header .hd_all .lang {
+    display: none;
+  }
+  header .hd_all .m_menu_button {
+    display: block;
+  }
+}
 /* 모바일2 576px */
+@media screen and (max-width: 576px) {
+  main #about .frame-1 ul {
+    flex-direction: column;
+    text-align: center;
+  }
+  main #about .frame-1 ul .right {
+    padding: 0;
+  }
+  main #about .frame-1 ul .right img {
+    padding-top: 2rem;
+    width: 400px;
+  }
+  main #about .aperture {
+    padding: 0 3rem 5rem;
+    text-align: center;
+  }
+  main #about .aperture h3 {
+    white-space: nowrap;
+    font-size: 1rem;
+  }
+  main #about .frame-2 .grid-box .item-grid {
+    display: flex;
+    flex-direction: column;
+  }
+  main #about .frame-3 ul {
+    width: 80%;
+  }
+  main #contact div ul {
+    text-align: center;
+    flex-direction: column;
+    top: 9.5rem;
+  }
+  main #contact div ul .cont-right {
+    padding: 0;
+  }
+  footer {
+    padding: 85px 1.2rem 40px;
+  }
+  footer .footer_p {
+    font-size: 11px;
+    line-height: 2;
+  }
+}
 /* 모바일3 갤석시 425px */
-/* 모바일4 아이폰 375px *//*# sourceMappingURL=moblie.css.map */
+@media screen and (max-width: 425px) {
+  main #home article .home-above h1 {
+    font-size: 2rem;
+  }
+  main #home article .home-under .home-title h3 {
+    font-size: 1rem;
+  }
+  main #about .frame-1 ul .right img {
+    width: 300px;
+  }
+  main #about .aperture h3 {
+    line-height: 2;
+    white-space: normal;
+  }
+  main #about .frame-3 ul .e1 div {
+    height: 45px;
+    padding: 0.2rem;
+  }
+  main #about .frame-3 ul .e2 div {
+    height: 45px;
+    padding: 0.2rem;
+  }
+  main #contact div ul .cont-left h2 {
+    font-size: 1.5rem;
+  }
+  main #contact div ul .cont-left h3 {
+    font-size: 0.8rem;
+  }
+}
+/* 모바일4 아이폰 375px */
+@media screen and (max-width: 375px) {
+  main #about .frame-1 ul .left h3 {
+    font-size: 1rem;
+  }
+  main #contact {
+    width: 80%;
+  }
+  main #contact div ul {
+    top: 8.5rem;
+  }
+}/*# sourceMappingURL=moblie.css.map */

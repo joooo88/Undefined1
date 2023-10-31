@@ -1,25 +1,351 @@
 @import "./mixin";
 
 /*데탑 1440px*/
-@include desktop{}
+@include desktop{
+    main {
+        #about {
+            .frame-2 {
+                .grid-box {
+                    .item-grid {
+                        .item {
+                            .text-box {
+                                h2{
+                                    font-size: 1.4rem;
+                                    .iconimg{
+                                        height: 25px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #contact {
+            div {
+                ul {
+                    width: 80%;
+                    margin: 0 auto;
+                    .cont-left {
+                        h2{
+                            font-size: 2rem;
+                        }
+                        h3{
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 /*노트북 1024px*/
-@include laptop{}
+@include laptop{
+    header {
+        .hd_all{
+            width: 100%;
+        }
+    }
+    main {
+        #about {
+            .frame-1 {
+                ul {
+                    .right {
+                        img{
+                            width: 400px;
+                        }
+                    }
+                }
+            }
+            .frame-2{
+                padding: 5rem 0;
+            }
+            .frame-3{
+                ul{
+                    width: 70%;
+                    margin: 0 auto;
+                }
+            }
+        }
+        #contact {
+            div {
+                ul{
+                    padding: 0 3rem;
+                    width: 100%;
+                    .cont-left {
+                        h3{
+                            font-size: 1rem;
+                        }
+                    }
+                    .cont-right{
+                        padding-left: 5rem;
+                        div{
+                            width: 250px;
+                            h4{
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        .footer_area{
+            padding: 0 1rem;
+        }
+    }
+}
 
 /*패드 991px*/
-@include tablet{}
+@include tablet{
+    main {
+        #contact {
+            div {
+                ul {
+                    .cont-right{
+                        padding-left: 3rem;
+                    }
+                }
+            }
+        }
+    }
+}
 
 /*아이패드 768px*/
-@include itablet{}
+@include itablet{
+    header {
+        .hd_all {
+            .pc_menu {
+                .menu_style{
+                    gap: 1rem;
+                }
+            }
+        }
+    }
+    main {
+        #about {
+            .frame-1 {
+                ul {
+                    .left{
+                        h2{
+                            font-size: 2.5rem;
+                        }
+                        h3{
+                            font-size: 1.1rem;
+                        }
+                    }
+                    .right {
+                        padding-left: 3rem;
+                        img{
+                            width: 300px;
+                        }
+                    }
+                }
+            }
+            .aperture {
+                h3{
+                    font-size: 1.2rem;
+                }
+            }
+            .frame-2 {
+                .grid-box {
+                    .item-grid{
+                        width: 80%;
+                        .item{
+                            padding: 1rem;
+                            .text-box {
+                                h2{
+                                    font-size: 1.1rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #contact {
+            height: 40vh;
+            div{
+                ul{
+                    padding: 0 2rem ; 
+                    top: 12.5rem;
+                }
+            }
+        }
+    }
+}
 
 /* 모바일 767px*/
-@include mobile{}
+@include mobile{
+    header{
+       .hd_all{
+            .pc_menu{
+                display: none;
+            }
+            .lang{
+                display: none;
+            }
+            .m_menu_button{
+                display: block;
+            }
+        } 
+    }
+}
 
 /* 모바일2 576px */
-@include mobile2{}
+@include mobile2{
+    main {
+        #about {
+            .frame-1 {
+                ul{
+                    flex-direction: column;
+                    text-align: center;
+                    .right{
+                        padding: 0 ;
+                        img{
+                            padding-top: 2rem;
+                            width: 400px;
+                        }
+                    }
+                }
+            }
+            .aperture{
+                padding: 0 3rem 5rem;
+                text-align: center;
+                h3{
+                    white-space: nowrap;
+                    font-size: 1rem;
+                }
+            }
+            .frame-2 {
+                .grid-box {
+                    .item-grid{
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }
+            }
+            .frame-3{
+                ul{
+                    width: 80%;
+                }
+            }
+        }
+        #contact {
+            div {
+                ul{
+                    text-align: center;
+                    flex-direction: column;
+                    top: 9.5rem;
+                    .cont-right{
+                        padding: 0;
+                    }
+                }
+            }
+        }
+
+    }
+    footer{
+        padding: 85px 1.2rem 40px;
+        .footer_p{
+            font-size: 11px;
+            line-height: 2;
+        }
+    }
+}
 
 /* 모바일3 갤석시 425px */
-@include galaxy{}
+@include galaxy{
+    main {
+        #home {
+            article {
+                .home-above{
+                    h1{
+                        font-size: 2rem;
+                    }
+                }
+                .home-under {
+                    .home-title {
+                        h3{
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+        #about {
+            .frame-1 {
+                ul {
+                    .right {
+                        img{
+                            width: 300px;
+                        }
+                    }
+                }
+            }
+            .aperture {
+                h3{
+                    line-height: 2;
+                    white-space: normal;
+                }
+            }
+            .frame-3 {
+                ul {
+                    .e1 {
+                        div {
+                            height: 45px;
+                            padding: 0.2rem;
+                        }
+                    }
+                    .e2 {
+                        div {
+                            height: 45px;
+                            padding: 0.2rem;
+                        }
+                    }
+                }
+            }
+        }
+        #contact {
+            div {
+                ul {
+                    .cont-left{
+                        h2{
+                            font-size: 1.5rem;
+                        }
+                        h3{
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 /* 모바일4 아이폰 375px */
-@include iphone{}
+@include iphone{
+    main {
+        #about {
+            .frame-1 {
+                ul {
+                    .left {
+                        h3{
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+        #contact{
+            width:80% ;
+            div{
+                ul{
+                    top: 8.5rem;
+                }
+            }
+        }
+    }
+}

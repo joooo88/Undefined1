@@ -238,6 +238,9 @@ main #home .swiper {
 }
 main #home .swiper .swiper-wrapper .swiper-slide img {
   width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   background-size: cover;
   filter: opacity(0.8);
 }
