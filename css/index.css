@@ -375,9 +375,9 @@ main #about .aperture h3 {
 main #about .frame-2 {
   width: 100%;
   padding: 10rem;
-  background: linear-gradient(-45deg, #7b7c80, #d6d5d2, #4d71af, #6aa2da);
+  background: linear-gradient(-25deg, #7b7c80, #d6d5d2, #4d71af, #6aa2da);
   background-size: 400% 400%;
-  animation: gradient 15s alternate infinite;
+  animation: gradient 15s ease-in infinite;
 }
 @keyframes gradient {
   0% {
