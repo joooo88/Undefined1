@@ -260,6 +260,10 @@ main #home article .home-above {
   width: 100%;
   text-align: center;
 }
+main #home article .home-above h1 {
+  font-size: 5rem;
+  padding-bottom: 3rem;
+}
 main #home article .home-span {
   width: 100%;
   border-bottom: 2px solid white;
@@ -268,15 +272,25 @@ main #home article .home-under {
   width: 100%;
   text-align: center;
 }
-main #home article .home-under .home-title h1 {
-  padding-bottom: 3rem;
-}
 main #home article .home-under .home-title h3 {
   padding-top: 3rem;
   font-size: 1.5rem;
   font-weight: 300;
   line-height: 1.8;
   color: #ffffff;
+}
+main #home article .arrowdo {
+  transform: translateY(6rem);
+  font-size: 4rem;
+  animation: mov1 2s ease-in-out forwards infinite;
+}
+@keyframes mov1 {
+  0% {
+    transform: translateY(6rem);
+  }
+  50% {
+    transform: translateY(8rem);
+  }
 }
 main #about {
   width: 100vw;
@@ -285,8 +299,27 @@ main #about .frame-1 {
   width: 100vw;
   background-color: white;
   padding: 8rem 3rem;
+  position: relative;
 }
-main #about .frame-1 ul {
+main #about .frame-1 .dodo2 {
+  position: absolute;
+  top: 5rem;
+  left: 0;
+}
+main #about .frame-1 .dodo2 li {
+  opacity: 0.1;
+  font-size: 20rem;
+  animation: mov2 3s forwards infinite;
+}
+@keyframes mov2 {
+  0% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+}
+main #about .frame-1 .dodo1 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -296,22 +329,41 @@ main #about .frame-1 ul {
   max-width: 100%;
   position: relative;
 }
-main #about .frame-1 ul .left h2 {
+main #about .frame-1 .dodo1 .left h2 {
   font-size: 3rem;
   font-weight: bold;
 }
-main #about .frame-1 ul .left h3 {
+main #about .frame-1 .dodo1 .left h3 {
   font-size: 1.3rem;
   line-height: 2;
 }
-main #about .frame-1 ul .right {
+main #about .frame-1 .dodo1 .right {
   padding-left: 5rem;
 }
-main #about .frame-1 ul .right img {
+main #about .frame-1 .dodo1 .right img {
   width: 600px;
 }
 main #about .aperture {
   padding: 5rem;
+  position: relative;
+}
+main #about .aperture .dodo3 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+main #about .aperture .dodo3 div {
+  opacity: 0.3;
+  font-size: 20rem;
+  animation: mov3 5s infinite;
+}
+@keyframes mov3 {
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.1;
+  }
 }
 main #about .aperture h3 {
   font-size: 1.7rem;
@@ -323,7 +375,20 @@ main #about .aperture h3 {
 main #about .frame-2 {
   width: 100%;
   padding: 10rem;
-  background-color: #F3F6FB;
+  background: linear-gradient(-45deg, #7b7c80, #d6d5d2, #4d71af, #6aa2da);
+  background-size: 400% 400%;
+  animation: gradient 15s alternate infinite;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 main #about .frame-2 .grid-box {
   width: 100%;

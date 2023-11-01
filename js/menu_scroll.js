@@ -14,3 +14,14 @@ jQuery(document).ready(function($) {
     
     //메뉴 클릭시 자연스러운 스크롤 이동
     
+
+    var bg = document.getElementsByClassName("frame-2");
+
+setInterval(function(){
+  var color = Math.random()*0xffffff;
+  color = parseInt(color);
+  color = color.toString(16);
+  
+  bg.style.background = "#" + color;
+  
+},3000);

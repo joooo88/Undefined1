@@ -291,6 +291,10 @@ main{
       .home-above{
         width: 100%;
         text-align: center;
+        h1{
+          font-size: 5rem;
+          padding-bottom: 3rem;
+        }
       }
       .home-span{
         width: 100%;
@@ -300,9 +304,7 @@ main{
         width: 100%;
         text-align: center;
         .home-title{
-          h1{
-            padding-bottom: 3rem;
-          }
+          
           h3{
             padding-top: 3rem;
             font-size: 1.5rem;
@@ -310,6 +312,19 @@ main{
             line-height: 1.8;
             color: #ffffff;
           }
+        }
+      }
+      .arrowdo{
+        transform: translateY(6rem);
+        font-size: 4rem;
+        animation: mov1 2s ease-in-out forwards infinite;
+      }
+      @keyframes mov1 {
+        0%{
+          transform: translateY(6rem);
+        }
+        50%{
+          transform: translateY(8rem);
         }
       }
 
@@ -323,7 +338,26 @@ main{
       width: 100vw;
       background-color: white;
       padding: 8rem 3rem;
-      ul{
+      position: relative;
+      .dodo2{
+        position: absolute;
+        top: 5rem;
+        left: 0;
+        li{
+          opacity: 0.1;
+          font-size: 20rem;
+          animation: mov2 3s forwards infinite;
+        }
+        @keyframes mov2 {
+          0%{
+            opacity: 0.1;
+          }
+          50%{
+            opacity: 0.2;
+          }
+        }
+      }
+      .dodo1{
         display: flex;
         align-items: center;
         justify-content: center;
@@ -349,9 +383,29 @@ main{
           }
         }
       }
+      
     }
     .aperture{
       padding: 5rem ;
+      position: relative;
+      .dodo3{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        div{
+          opacity: 0.3;
+          font-size: 20rem;
+          animation: mov3 5s infinite;
+        }
+        @keyframes mov3 {
+          0%{
+            opacity: 0.3;
+          }
+          50%{
+            opacity: 0.1;
+          }
+        }
+      }
       h3{
         font-size: 1.7rem;
         font-weight: bold;
@@ -363,8 +417,22 @@ main{
     .frame-2{
       width: 100%;
       padding: 10rem;
-      background-color: #F3F6FB;
-      .frame-bg{}
+      // transition: all 2s ease-out;
+      // background-color: #c0c0c0;
+      background: linear-gradient(-45deg, #7b7c80, #d6d5d2, #4d71af, #6aa2da);
+      background-size: 400% 400%;
+      animation: gradient 15s alternate infinite;
+      @keyframes gradient {
+        0% {
+        background-position: 0% 50%;
+        }
+        50% {
+        background-position: 100% 50%;
+        }
+        100% {
+        background-position: 0% 50%;
+        }
+        }
       .grid-box{
         width: 100%;
           .item-grid{
