@@ -242,7 +242,7 @@ main #home .swiper .swiper-wrapper .swiper-slide img {
   -o-object-fit: cover;
      object-fit: cover;
   background-size: cover;
-  filter: opacity(0.8);
+  filter: opacity(0.4);
 }
 main #home article {
   z-index: 1;
@@ -268,7 +268,11 @@ main #home article .home-under {
   width: 100%;
   text-align: center;
 }
+main #home article .home-under .home-title h1 {
+  padding-bottom: 3rem;
+}
 main #home article .home-under .home-title h3 {
+  padding-top: 3rem;
   font-size: 1.5rem;
   font-weight: 300;
   line-height: 1.8;
