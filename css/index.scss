@@ -294,13 +294,31 @@ main{
       .home-above{
         width: 100%;
         text-align: center;
+        position: relative;
         // h1{
         //   font-size: 5rem;
         //   padding-bottom: 3rem;
         // }
-        img{
+        .mainimg{
           width: 250px;
           padding-bottom: 3rem;
+          animation: op2 7s ease-in alternate infinite;
+        }
+        @keyframes op1 {
+          0%{opacity: 0;}
+          100%{opacity: 0.2;}
+        }
+        .mainimg2{
+          top: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 250px;
+          position: absolute;
+          animation: op1 3s ease-in alternate infinite;
+        }
+        @keyframes op1 {
+          0%{opacity: 0;}
+          100%{opacity: 0.5;}
         }
       }
       .home-span{
