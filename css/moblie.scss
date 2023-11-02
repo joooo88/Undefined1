@@ -3,6 +3,34 @@
 /*데탑 1440px*/
 @include desktop{
     main {
+        #home {
+            article {
+                .home-above {
+                    img{
+                        width: 180px;
+                        padding-bottom: 2rem;
+                    }
+                }
+                .home-under {
+                    .home-title {
+                        h3{
+                            padding-top: 2rem;
+                        }
+                    }
+                }
+                .arrowdo{
+                    transform: translateY(2rem);
+                }
+                @keyframes mov1 {
+                    0%{
+                      transform: translateY(2rem);
+                    }
+                    50%{
+                      transform: translateY(4rem);
+                    }
+                  }
+            }
+        }
         #about {
             .frame-2 {
                 .grid-box {
@@ -196,6 +224,11 @@
 
 /* 모바일2 576px */
 @include mobile2{
+    header{
+        .hd_all{
+            padding: 0 2rem;
+        }
+    }
     main {
         #about {
             .frame-1 {
@@ -249,6 +282,21 @@
     }
     footer{
         padding: 85px 1.2rem 40px;
+        .footer_area{
+            .ulm {
+                .foter-left {
+                    .clikbox {
+                        a {
+                            .logo_icon {
+                                img{
+                                    width: 100px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        } 
         .footer_p{
             font-size: 11px;
             line-height: 2;
@@ -317,6 +365,24 @@
                         }
                         h3{
                             font-size: 0.8rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        .footer_area {
+            .ulm {
+                .foter-left{
+                    flex-direction: column;
+                    align-items: flex-start;
+                    .clikbox {
+                        padding-bottom: 1rem;
+                        a {
+                            .logo_icon{
+                                margin-bottom: 20px;
+                            }
                         }
                     }
                 }

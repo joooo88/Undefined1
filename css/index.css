@@ -53,8 +53,11 @@ header .hd_all hgroup a {
 header .hd_all hgroup a h1 {
   width: 100%;
 }
-header .hd_all hgroup a h1 img {
-  width: 100px;
+header .hd_all hgroup a h1 .logo_off {
+  width: 130px;
+}
+header .hd_all hgroup a h1 .logo_on {
+  display: none;
 }
 header .hd_all .pc_menu {
   width: 60%;
@@ -215,6 +218,13 @@ header a {
 .scroll_bar a :hover {
   color: #000; /* 원하는 색상으로 변경하세요. */
 }
+.scroll_bar a .logo_off {
+  display: none;
+}
+.scroll_bar a .logo_on {
+  display: inline !important;
+  width: 130px;
+}
 
 /* main */
 main #home {
@@ -260,8 +270,8 @@ main #home article .home-above {
   width: 100%;
   text-align: center;
 }
-main #home article .home-above h1 {
-  font-size: 5rem;
+main #home article .home-above img {
+  width: 250px;
   padding-bottom: 3rem;
 }
 main #home article .home-span {
@@ -280,16 +290,16 @@ main #home article .home-under .home-title h3 {
   color: #ffffff;
 }
 main #home article .arrowdo {
-  transform: translateY(6rem);
+  transform: translateY(4rem);
   font-size: 4rem;
   animation: mov1 2s ease-in-out forwards infinite;
 }
 @keyframes mov1 {
   0% {
-    transform: translateY(6rem);
+    transform: translateY(4rem);
   }
   50% {
-    transform: translateY(8rem);
+    transform: translateY(6rem);
   }
 }
 main #about {
@@ -375,7 +385,7 @@ main #about .aperture h3 {
 main #about .frame-2 {
   width: 100%;
   padding: 10rem;
-  background: linear-gradient(-25deg, #7b7c80, #d6d5d2, #4d71af, #6aa2da);
+  background: linear-gradient(-25deg, #7b7c80, #d6d5d2, #082080, #4d71af, #6aa2da);
   background-size: 400% 400%;
   animation: gradient 15s ease-in infinite;
 }
@@ -600,7 +610,7 @@ footer .footer_area .ulm .foter-left .clikbox a .logo_icon {
   margin-bottom: 50px;
 }
 footer .footer_area .ulm .foter-left .clikbox a .logo_icon img {
-  width: 100px;
+  width: 150px;
 }
 footer .footer_area .ulm .foter-left .clikbox .sns a {
   font-size: 1.3rem;
@@ -610,6 +620,7 @@ footer .footer_area .ulm .foter-left .inc {
   color: #9E9E9E;
 }
 footer .footer_area .ulm .foter-left .inc h4 {
+  font-weight: bold;
   font-size: 1.2rem;
   color: white;
 }

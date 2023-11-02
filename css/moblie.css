@@ -1,6 +1,24 @@
 @charset "UTF-8";
 /*데탑 1440px*/
 @media screen and (max-width: 1440px) {
+  main #home article .home-above img {
+    width: 180px;
+    padding-bottom: 2rem;
+  }
+  main #home article .home-under .home-title h3 {
+    padding-top: 2rem;
+  }
+  main #home article .arrowdo {
+    transform: translateY(2rem);
+  }
+  @keyframes mov1 {
+    0% {
+      transform: translateY(2rem);
+    }
+    50% {
+      transform: translateY(4rem);
+    }
+  }
   main #about .frame-2 .grid-box .item-grid .item .text-box h2 {
     font-size: 1.4rem;
   }
@@ -110,6 +128,9 @@
 }
 /* 모바일2 576px */
 @media screen and (max-width: 576px) {
+  header .hd_all {
+    padding: 0 2rem;
+  }
   main #about .frame-1 .dodo1 {
     flex-direction: column;
     text-align: center;
@@ -147,6 +168,9 @@
   footer {
     padding: 85px 1.2rem 40px;
   }
+  footer .footer_area .ulm .foter-left .clikbox a .logo_icon img {
+    width: 100px;
+  }
   footer .footer_p {
     font-size: 11px;
     line-height: 2;
@@ -180,6 +204,16 @@
   }
   main #contact div ul .cont-left h3 {
     font-size: 0.8rem;
+  }
+  footer .footer_area .ulm .foter-left {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  footer .footer_area .ulm .foter-left .clikbox {
+    padding-bottom: 1rem;
+  }
+  footer .footer_area .ulm .foter-left .clikbox a .logo_icon {
+    margin-bottom: 20px;
   }
 }
 /* 모바일4 아이폰 375px */

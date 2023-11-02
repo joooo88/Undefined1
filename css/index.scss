@@ -36,9 +36,10 @@ header{
                   width: 100%;
                   h1{
                       width: 100%;
-                      img{
-                          width: 100px;
+                      .logo_off{
+                        width: 130px;
                       }
+                      .logo_on{display: none;}
                   }
               }
           }
@@ -242,6 +243,8 @@ header{
     :hover{
       color: #000; /* 원하는 색상으로 변경하세요. */
     }
+    .logo_off{display: none;}
+    .logo_on{display: inline !important; width: 130px;  }
   }
 }
 
@@ -291,8 +294,12 @@ main{
       .home-above{
         width: 100%;
         text-align: center;
-        h1{
-          font-size: 5rem;
+        // h1{
+        //   font-size: 5rem;
+        //   padding-bottom: 3rem;
+        // }
+        img{
+          width: 250px;
           padding-bottom: 3rem;
         }
       }
@@ -315,16 +322,16 @@ main{
         }
       }
       .arrowdo{
-        transform: translateY(6rem);
+        transform: translateY(4rem);
         font-size: 4rem;
         animation: mov1 2s ease-in-out forwards infinite;
       }
       @keyframes mov1 {
         0%{
-          transform: translateY(6rem);
+          transform: translateY(4rem);
         }
         50%{
-          transform: translateY(8rem);
+          transform: translateY(6rem);
         }
       }
 
@@ -419,7 +426,7 @@ main{
       padding: 10rem;
       // transition: all 2s ease-out;
       // background-color: #c0c0c0;
-      background: linear-gradient(-25deg, #7b7c80, #d6d5d2, #4d71af, #6aa2da);
+      background: linear-gradient(-25deg, #7b7c80, #d6d5d2, #082080, #4d71af, #6aa2da);
       background-size: 400% 400%;
       animation: gradient 15s ease-in infinite;
       @keyframes gradient {
@@ -636,7 +643,7 @@ footer{
               text-align: left;
               margin-bottom: 50px;
                 img{
-                    width: 100px;
+                    width: 150px;
                 }
               }
             }
@@ -653,6 +660,7 @@ footer{
           .inc{
             color: #9E9E9E;
               h4{
+                font-weight: bold;
                 font-size: 1.2rem;
                 color: white;
               }
