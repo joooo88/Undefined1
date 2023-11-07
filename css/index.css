@@ -274,30 +274,14 @@ main #home article .home-above {
 main #home article .home-above .mainimg {
   width: 250px;
   padding-bottom: 3rem;
-  animation: op2 7s ease-in alternate infinite;
+  animation: op2 2s ease-in alternate infinite;
 }
-@keyframes op1 {
+@keyframes op2 {
   0% {
     opacity: 0;
   }
-  100% {
-    opacity: 0.2;
-  }
-}
-main #home article .home-above .mainimg2 {
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 250px;
-  position: absolute;
-  animation: op1 3s ease-in alternate infinite;
-}
-@keyframes op1 {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0.5;
+  50% {
+    opacity: 1;
   }
 }
 main #home article .home-span {
@@ -311,9 +295,25 @@ main #home article .home-under {
 main #home article .home-under .home-title h3 {
   padding-top: 3rem;
   font-size: 1.5rem;
-  font-weight: 300;
+  font-weight: 500;
   line-height: 1.8;
   color: #ffffff;
+}
+main #home article .home-under .home-title h3 bb {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-position: under;
+  text-decoration-thickness: 3px;
+  animation: bit1 2s alternate infinite;
+}
+@keyframes bit1 {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
 }
 main #home article .arrowdo {
   transform: translateY(4rem);
@@ -368,10 +368,17 @@ main #about .frame-1 .dodo1 {
 main #about .frame-1 .dodo1 .left h2 {
   font-size: 3rem;
   font-weight: bold;
+  text-decoration-line: underline;
+  text-underline-position: under;
 }
 main #about .frame-1 .dodo1 .left h3 {
+  padding-top: 1rem;
   font-size: 1.3rem;
   line-height: 2;
+}
+main #about .frame-1 .dodo1 .left h3 bb {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 main #about .frame-1 .dodo1 .right {
   padding-left: 5rem;
@@ -380,8 +387,17 @@ main #about .frame-1 .dodo1 .right img {
   width: 600px;
 }
 main #about .aperture {
-  padding: 5rem;
+  padding-top: 3%;
+  padding-bottom: 10rem;
   position: relative;
+}
+main #about .aperture::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 2px;
+  background: #b1b1b1;
 }
 main #about .aperture .dodo3 {
   position: absolute;
@@ -402,11 +418,23 @@ main #about .aperture .dodo3 div {
   }
 }
 main #about .aperture h3 {
-  font-size: 1.7rem;
   font-weight: bold;
+  font-size: 1.5rem;
   text-align: center;
-  text-decoration: underline;
+}
+main #about .aperture h3 bb {
+  font-size: 2rem;
+  text-decoration-line: underline;
   text-underline-position: under;
+  animation: mov5 2s ease-in-out infinite;
+}
+@keyframes mov5 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
 }
 main #about .frame-2 {
   width: 100%;
@@ -498,12 +526,23 @@ main #about .frame-3 {
   width: 100%;
   padding-top: 5rem;
 }
+main #about .frame-3 .title-3 {
+  margin: 0 auto;
+}
 main #about .frame-3 .title-3 h2 {
-  margin-top: 0 auto;
+  font-weight: 600;
+  color: #333333;
   text-align: center;
-  font-weight: bold;
+}
+main #about .frame-3 .title-3 p {
+  padding-top: 1rem;
+  font-size: 17px;
+  color: #666666;
+  text-align: center;
 }
 main #about .frame-3 ul {
+  display: flex;
+  flex-direction: column;
   padding-top: 5rem;
 }
 main #about .frame-3 ul .e1 {
@@ -514,17 +553,16 @@ main #about .frame-3 ul .e1 {
   gap: 2rem;
 }
 main #about .frame-3 ul .e1 div {
-  border: 2px solid #DFDFDF;
-  width: 250px;
+  border: 2px solid #eeeeee;
+  width: 220px;
   height: 80px;
   padding: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 5px;
 }
 main #about .frame-3 ul .e1 div img {
-  width: 100%;
+  width: 90%;
 }
 main #about .frame-3 ul .e2 {
   display: flex;
@@ -533,17 +571,16 @@ main #about .frame-3 ul .e2 {
   gap: 2rem;
 }
 main #about .frame-3 ul .e2 div {
-  border: 2px solid #DFDFDF;
-  width: 250px;
+  border: 2px solid #eeeeee;
+  width: 220px;
   height: 80px;
   padding: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 5px;
 }
 main #about .frame-3 ul .e2 div img {
-  width: 100%;
+  width: 90%;
 }
 main #contact {
   position: relative;

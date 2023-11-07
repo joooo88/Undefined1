@@ -302,23 +302,11 @@ main{
         .mainimg{
           width: 250px;
           padding-bottom: 3rem;
-          animation: op2 7s ease-in alternate infinite;
+          animation: op2 2s ease-in alternate infinite;
         }
-        @keyframes op1 {
+        @keyframes op2 {
           0%{opacity: 0;}
-          100%{opacity: 0.2;}
-        }
-        .mainimg2{
-          top: 0;
-          left: 50%;
-          transform: translateX(-50%);
-          width: 250px;
-          position: absolute;
-          animation: op1 3s ease-in alternate infinite;
-        }
-        @keyframes op1 {
-          0%{opacity: 0;}
-          100%{opacity: 0.5;}
+          50%{opacity: 1;}
         }
       }
       .home-span{
@@ -331,11 +319,24 @@ main{
         .home-title{
           
           h3{
+            
             padding-top: 3rem;
             font-size: 1.5rem;
-            font-weight: 300;
+            font-weight: 500;
             line-height: 1.8;
             color: #ffffff;
+            bb{
+              font-size: 1.8rem;
+              font-weight: bold;
+              text-decoration:underline;
+              text-underline-position:under;
+              text-decoration-thickness: 3px;
+              animation: bit1 2s alternate infinite;
+            }
+            @keyframes bit1 {
+              0%{opacity: 1;}
+              50%{opacity: 0.2;}
+            }
           }
         }
       }
@@ -395,10 +396,17 @@ main{
           h2{
             font-size: 3rem;
             font-weight: bold;
+            text-decoration-line: underline;
+            text-underline-position:under;
           }
           h3{
+            padding-top: 1rem;
             font-size: 1.3rem;
             line-height: 2;
+            bb{
+              font-size: 1.5rem;
+              font-weight: bold;
+            }
           }
         }
         .right{
@@ -407,12 +415,23 @@ main{
             width: 600px;
           }
         }
+        
       }
       
     }
     .aperture{
-      padding: 5rem ;
+      padding-top: 3%;
+      padding-bottom: 10rem ;
       position: relative;
+      &::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 2px;
+        background: #b1b1b1;
+      }
+
       .dodo3{
         position: absolute;
         bottom: 0;
@@ -421,6 +440,7 @@ main{
           opacity: 0.3;
           font-size: 20rem;
           animation: mov3 5s infinite;
+          
         }
         @keyframes mov3 {
           0%{
@@ -429,14 +449,24 @@ main{
           50%{
             opacity: 0.1;
           }
+          
         }
       }
       h3{
-        font-size: 1.7rem;
         font-weight: bold;
+        font-size: 1.5rem;
         text-align: center;
-        text-decoration: underline;
-        text-underline-position: under;
+        
+          bb{
+            font-size: 2rem;
+            text-decoration-line: underline;
+            text-underline-position:under;
+            animation: mov5 2s ease-in-out infinite;
+          @keyframes mov5 {
+            0%{opacity: 0;}
+            50%{opacity: 1;}
+          }
+        }
       }
     }
     .frame-2{
@@ -522,13 +552,22 @@ main{
       width: 100%;
       padding-top: 5rem;
       .title-3{
+        margin: 0 auto;
         h2{
-          margin-top: 0 auto;
+          font-weight: 600;
+          color: #333333;
           text-align: center;
-          font-weight: bold;
+        }
+        p{
+          padding-top: 1rem;
+          font-size: 17px;
+          color: #666666;
+          text-align: center;
         }
       }
       ul{
+        display: flex;
+        flex-direction: column;
         padding-top: 5rem;
         .e1{
           display: flex;
@@ -537,16 +576,15 @@ main{
           margin-bottom: 2rem;
           gap: 2rem;
           div{
-            border: 2px solid #DFDFDF;
-            width: 250px;
+            border: 2px solid #eeeeee;
+            width: 220px;
             height: 80px;
             padding: 1rem;
             display: flex;
             align-items: center;
             justify-content: center;
-            border-radius: 5px;
             img{
-              width: 100%;
+              width: 90%;
             }
           }
         }
@@ -555,17 +593,16 @@ main{
           align-items: center;
           justify-content: center;
           gap: 2rem;
-            div{
-            border: 2px solid #DFDFDF;
-            width: 250px;
+          div{
+            border: 2px solid #eeeeee;
+            width: 220px;
             height: 80px;
             padding: 1rem;
             display: flex;
             align-items: center;
             justify-content: center;
-            border-radius: 5px;
             img{
-             width: 100%;
+              width: 90%;
             }
           }
         }
