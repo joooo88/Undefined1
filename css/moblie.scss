@@ -76,6 +76,16 @@
         }
     }
     main {
+        #home {
+            article {
+                .home-above {
+                    .mainimg{
+                        width: 200px;
+                        padding-bottom: 1rem;
+                    }
+                }
+            }
+        }
         #about {
             .frame-1 {
                 .dodo1 {
@@ -91,7 +101,7 @@
             }
             .frame-3{
                 ul{
-                    width: 70%;
+                    width: 90%;
                     margin: 0 auto;
                 }
             }
@@ -165,7 +175,7 @@
                         }
                     }
                     .right {
-                        padding-left: 3rem;
+                        padding-left: 1rem;
                         img{
                             width: 300px;
                         }
@@ -175,6 +185,9 @@
             .aperture {
                 h3{
                     font-size: 1.2rem;
+                }
+                &::after{
+                    top: -15%;
                 }
             }
             .frame-2 {
@@ -251,6 +264,10 @@
                     white-space: nowrap;
                     font-size: 1rem;
                 }
+                &::after{
+                    top: -25%;
+                    left: 0;
+                }
             }
             .frame-2 {
                 .grid-box {
@@ -262,7 +279,17 @@
             }
             .frame-3{
                 ul{
-                    width: 80%;
+                    justify-content: center;
+                    width: 90%;
+                    flex-direction: row;
+                    gap: 1rem;
+                    .e1{
+                        flex-direction: column;
+                    }
+                    .e2{
+                        flex-direction: column;
+                        justify-content: flex-start;
+                    }
                 }
             }
         }
@@ -326,6 +353,13 @@
         #about {
             .frame-1 {
                 .dodo1 {
+                    .left{
+                        h3{
+                            bb{
+                                font-size: 1.1rem;
+                            }
+                        }
+                    }
                     .right {
                         img{
                             width: 300px;
@@ -340,17 +374,26 @@
                 }
             }
             .frame-3 {
+                padding: 5rem 2rem 0;
                 ul {
                     .e1 {
                         div {
+                            width: 160px;
                             height: 45px;
                             padding: 0.2rem;
+                            img{
+                                width: 80%;
+                            }
                         }
                     }
                     .e2 {
                         div {
+                            width: 160px;
                             height: 45px;
                             padding: 0.2rem;
+                            img{
+                                width: 70%;
+                            }
                         }
                     }
                 }
@@ -394,14 +437,36 @@
 /* 모바일4 아이폰 375px */
 @include iphone{
     main {
+        #home{
+            article {
+                .home-under {
+                    .home-title {
+                        h3 {
+                            bb{
+                                font-size: 1.2rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
         #about {
             .frame-1 {
                 .dodo1 {
                     .left {
                         h3{
                             font-size: 1rem;
+                            bb{
+                                font-size: 1rem;
+                            }
                         }
                     }
+                }
+            }
+            .aperture {
+                h3 {bb{font-size: 1.4rem;}}
+                &::after{
+                    top: -35%;
                 }
             }
         }
